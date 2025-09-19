@@ -174,7 +174,9 @@ html {
 
 body {
 	background: #fff;
-	overflow: hidden;
+	/* allow vertical scrolling on small devices while preventing horizontal overflow */
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 body.is-preload *,
@@ -326,8 +328,10 @@ a:hover {
 	transform: translate3d(0, 0, 0);
 	/* Set your background with this */
 
-	background: #348cb2 url("images/bg.jpg") bottom left;
+	background: #348cb2 bottom left;
 	background-repeat: repeat-x;
+	background-attachment: scroll;
+	/* prefer non-fixed by default */
 	height: 100%;
 	left: 0;
 	opacity: 1;
@@ -401,7 +405,9 @@ a:hover {
 
 #bg {
 	animation: none;
-	background: #0e2a47 url("images/my-bg.jpg") center/cover no-repeat fixed;
+	background: #0e2a47 center/cover no-repeat;
+	background-attachment: scroll;
+	/* prefer non-fixed by default */
 	height: 100%;
 	left: 0;
 	top: 0;
@@ -1104,8 +1110,13 @@ a:hover {
 	}
 
 	#bg {
-		background-size: 300px auto;
-		width: 900px;
+		/* Use a simpler, mobile-friendly background and avoid fixed attachment */
+		background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: scroll;
+		width: 100%;
 	}
 
 	/* Header */
@@ -1203,8 +1214,13 @@ a:hover {
 	}
 
 	#bg {
-		background-size: 412.5px auto;
-		width: 1237.5px;
+		/* mobile-friendly background */
+		background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: scroll;
+		width: 100%;
 	}
 
 	/* Header */
