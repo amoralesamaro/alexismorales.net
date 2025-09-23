@@ -39,4 +39,4 @@ Then visit `http://localhost:8000` in your browser.
 ## 👤 Author  
 
 **Alexis Morales Amaro**  
-University of Florida — Computer Science Engineering  
+University of Florida — B.S. in Computer Science (College of Engineering) 
