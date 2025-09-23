@@ -1,6 +1,6 @@
-# 🌐 Alexis Morales — Portfolio  
+# 🌐 Alexis Morales — Personal Website
 
-This is my **personal portfolio website**, built to showcase my skills, projects, and resume.  
+This is my **personal website**, built to showcase my skills, projects, and resume.  
 
 🔗 Live Website: [**alexismorales.net**](https://alexismorales.net)  
 (Hosted on **GitHub Pages**)  
