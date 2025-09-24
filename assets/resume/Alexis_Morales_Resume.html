@@ -6,7 +6,7 @@
   <title>Alexis Morales — Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/resume.css">
-  <meta name="description" content="Resume of Alexis Morales — CS student focused on backend development (Python, C++, Django), projects, and experience.">
+  <meta name="description" content="Resume of Alexis Morales — Computer Science student focused on backend development (Python, C++, Django), projects, and experience.">
 </head>
 
 <body>
@@ -15,23 +15,28 @@
     <div class="topline">
       <span>Jacksonville, FL</span><span>•</span>
       <a href="tel:19049939584">904-993-9584</a><span>•</span>
-      <a href="mailto:contact@alexismorales.net">me@alexismorales.net</a><span>•</span>
+      <a href="mailto:me@alexismorales.net">me@alexismorales.net</a><span>•</span>
       <a href="https://github.com/amoralesamaro">github.com/amoralesamaro</a><span>•</span>
-      <a href="https://www.linkedin.com/in/alexis-morales-34a595291/">linkedin.com/in/alexis-morales-34a595291</a>
+      <a href="https://www.linkedin.com/in/alexismoralesamaro/">linkedin.com/in/alexismoralesamaro</a>
+
+      <!-- Download button -->
+      <a href="resume.pdf" class="download-btn" download>Download PDF</a>
     </div>
     <div class="divider"></div>
-    <p class="muted">CS student at the University of Florida with a focus on backend development. Comfortable with Python, C++, data structures & algorithms, and building small full-stack projects with Django.</p>
+    <p class="muted">Computer Science student at the University of Florida focused on backend development.
+      Proficient in Python, C++, and algorithms with experience delivering full-stack projects using Django and React.
+      Skilled at building secure payment systems, real-time applications, and database-driven platforms.</p>
   </header>
+
 
   <section class="section">
     <h2>Education</h2>
     <div class="role">
-      <div class="where">University of Florida, Gainesville, FL — B.S. in Computer Science Engineering</div>
-      <div class="when">Expected May 2026</div>
+      <div class="where">University of Florida, Gainesville, FL — B.S. in Computer Science (College of Engineering)</div>
     </div>
+    <div class="muted">Expected Graduation: May 2026 • GPA: 3.72</div>
     <ul class="muted">
-      <li>GPA: 3.72</li>
-      <li>Relevant Coursework: Data Structures & Algorithms, Software Engineering, Digital Logic, Microprocessor Applications, Calculus</li>
+      <li>Relevant Coursework: Data Structures & Algorithms, Software Engineering, Database Systems</li>
     </ul>
   </section>
 
@@ -40,86 +45,78 @@
     <div class="skills-grid">
       <span class="pill">Python</span>
       <span class="pill">C++</span>
-      <span class="pill">MATLAB</span>
       <span class="pill">JavaScript</span>
-
       <span class="pill">Django</span>
       <span class="pill">React</span>
-
+      <span class="pill">Ruby on Rails</span>
+      <span class="pill">PostgreSQL</span>
       <span class="pill">SQLite</span>
-
-      <span class="pill">Git & GitHub</span>
+      <span class="pill">Firebase</span>
+      <span class="pill">Stripe API</span>
       <span class="pill">Linux</span>
-      <span class="pill">VS Code</span>
-      <span class="pill">Quartus / DE10-Lite</span>
-
     </div>
+  </section>
+
+  <section class="section">
+    <h2>Experience</h2>
+    <div class="role">
+      <div class="where">Infera — Software Engineering Intern (Remote)</div>
+      <div class="when">Summer 2025</div>
+    </div>
+    <ul>
+      <li>Developed backend features in Ruby on Rails for payment methods, invoices, and billing plans using Stripe API.</li>
+      <li>Built React components for payment management, invoice previews, and account settings, enhancing user experience.</li>
+      <li>Collaborated with engineers in an agile team using GitHub pull requests, code reviews, and iterative deployments.</li>
+    </ul>
+    <p class="muted"><span class="muted">Tech:</span> Ruby on Rails, React, PostgreSQL, Stripe</p>
   </section>
 
   <section class="section">
     <h2>Projects</h2>
 
     <div class="role">
-      <div class="where">Movie Recommendation System — C++</div>
-      <div class="when"><a href="https://github.com/amoralesamaro" class="muted">code</a></div>
+      <div class="where">KittyCart</div>
+      <div class="when"><a href="https://kittycart.code904.com" class="muted">live</a></div>
     </div>
     <ul>
-      <li>Built a collaborative-filtering engine (k-NN) that analyzes user ratings and outputs ranked movie recommendations.</li>
-      <li>Implemented efficient file I/O and data structures; wrote a simple CLI and unit tests; used GitHub for team collaboration (team of 3).</li>
-      <li><span class="muted">Tech:</span> C++ (STL), algorithms, Git/GitHub.</li>
+      <li>Built a shopping list app with Google Sign-In and per-user storage.</li>
+      <li>Deployed frontend with Vite & Firebase Hosting; used Firebase Realtime DB for scalable storage.</li>
     </ul>
+    <p class="muted"><span class="muted">Tech:</span> JavaScript, Vite, Firebase Auth, Realtime DB</p>
 
     <div class="role">
-      <div class="where">Sudoku Solver — Python</div>
-      <div class="when"></div>
+      <div class="where">EventSync</div>
+      <div class="when"><a href="https://github.com/amoralesamaro/event-sync" class="muted">code</a></div>
     </div>
     <ul>
-      <li>Implemented a backtracking solver with MRV heuristic and forward checking; prints board states and solution steps.</li>
-      <li><span class="muted">Tech:</span> Python, unit testing.</li>
+      <li>Led backend development of a full-stack platform for event discovery, ticketing, and real-time chat.</li>
+      <li>Designed searchable event listings and integrated Stripe API for secure ticket payments.</li>
     </ul>
+    <p class="muted"><span class="muted">Tech:</span> Django, Python, Stripe, PostgreSQL</p>
 
     <div class="role">
-      <div class="where">Digital Circuit Design Labs — Verilog on DE10-Lite</div>
-      <div class="when"></div>
+      <div class="where">Gator Movie Hub</div>
+      <div class="when"><a href="https://github.com/amoralesamaro/gator-movie-hub" class="muted">code</a></div>
     </div>
     <ul>
-      <li>Designed and simulated components (ALU, FSMs, multiplexers) in Quartus; verified on FPGA hardware.</li>
-      <li><span class="muted">Tech:</span> Verilog, Quartus, logic analyzers.</li>
+      <li>Implemented a movie management system with a custom hash table for fast storage and retrieval.</li>
+      <li>Added weighted rating system and recommendation engine to improve results.</li>
     </ul>
+    <p class="muted"><span class="muted">Tech:</span> C++, data structures, algorithms</p>
 
     <div class="role">
-      <div class="where">Personal Portfolio Website — HTML/CSS</div>
+      <div class="where">Personal Website</div>
       <div class="when"><a href="https://alexismorales.net" class="muted">live</a></div>
     </div>
     <ul>
-      <li>Designed and deployed a responsive one-page site linking LinkedIn, GitHub, HackerRank, and email; optimized for fast load.</li>
-      <li><span class="muted">Tech:</span> HTML5, CSS, GitHub Pages/Netlify (or custom hosting).</li>
+      <li>Built and deployed a responsive website to showcase projects, resume, and professional links.</li>
     </ul>
-  </section>
-
-  <section class="section">
-    <h2>Experience</h2>
-    <div class="role">
-      <div class="where">PCP Financial Services — Refund Billing Specialist, Jacksonville, FL</div>
-      <div class="when">Oct 2017 – Oct 2020</div>
-    </div>
-    <ul>
-      <li>Reviewed EOBs and reconciled A/R with high attention to detail; documented findings and tracked resolutions.</li>
-      <li>Communicated with payers and patients to resolve discrepancies while maintaining HIPAA compliance.</li>
-    </ul>
-
-    <div class="role">
-      <div class="where">Ring Power — Plasma Machine Operator, Jacksonville, FL</div>
-      <div class="when">Apr 2015 – Sep 2017</div>
-    </div>
-    <ul>
-      <li>Operated CNC plasma and oxy-fuel cutting equipment; followed safety SOPs and performed quality checks.</li>
-    </ul>
+    <p class="muted"><span class="muted">Tech:</span> HTML, CSS, GitHub Pages</p>
   </section>
 
   <section class="section">
     <h2>Languages</h2>
-    <p>English (fluent), Spanish (fluent), Portuguese (conversational)</p>
+    <p>English (fluent), Spanish (fluent)</p>
   </section>
 </body>
 

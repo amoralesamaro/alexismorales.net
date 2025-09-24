@@ -50,16 +50,20 @@ p {
 }
 
 ul {
-    margin: 6px 0 8px 18px;
-    padding: 0
+    margin: 4px 0 6px 18px;
+    padding: 0;
 }
 
 li {
-    margin: 4px 0
+    margin: 2px 0;
 }
 
 .muted {
     color: var(--muted)
+}
+
+header {
+    position: relative;
 }
 
 /* Header line */
@@ -91,7 +95,7 @@ li {
 
 /* Sections */
 .section {
-    margin-bottom: 12px
+    margin-bottom: 18px;
 }
 
 .role {
@@ -142,4 +146,31 @@ li {
         text-decoration: none;
         border: 0
     }
+}
+
+/* Download PDF button */
+.download-btn {
+    position: absolute;
+    top: 8px;
+    right: 18px;
+    border: none;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #0e2a47;
+    padding: .4rem 1rem;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .15);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.download-btn:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+}
+
+.download-btn:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
 }
