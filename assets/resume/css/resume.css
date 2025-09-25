@@ -148,11 +148,18 @@ header {
     }
 }
 
-/* Download PDF button */
+.download-btn:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .download-btn {
-    position: absolute;
-    top: 8px;
-    right: 18px;
     border: none;
     border-radius: 999px;
     background: var(--accent);
@@ -163,6 +170,7 @@ header {
     box-shadow: 0 3px 8px rgba(0, 0, 0, .15);
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+    white-space: nowrap;
 }
 
 .download-btn:hover {
@@ -170,7 +178,17 @@ header {
     transform: translateY(-1px);
 }
 
-.download-btn:focus-visible {
-    outline: 3px solid var(--accent);
-    outline-offset: 4px;
+/* Keep inline until it’s really small */
+@media (max-width: 420px) {
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .download-btn {
+        align-self: flex-start;
+        font-size: 12px;
+        padding: .35rem .9rem;
+    }
 }
