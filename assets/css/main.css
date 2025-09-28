@@ -752,21 +752,21 @@ a:hover {
 	}
 }
 
-/* Large tablets (e.g., iPad Pro 12.9" in landscape: 1366px) */
-@media screen and (min-width: 1025px) and (max-width: 1366px) {
+/* iPad Pro 12.9" landscape + other large tablets */
+@media screen and (min-width: 1024px) and (max-width: 1400px) and (orientation: landscape) {
 
-	/* start hero a bit lower, similar to tablets */
+	/* start hero a bit lower like tablet */
 	#main {
 		justify-content: flex-start;
 		padding-top: clamp(64px, 11vh, 140px);
 	}
 
-	/* give the icons a touch more breathing room under the button */
+	/* add breathing room under the button */
 	#header nav {
 		margin-top: 1.5em;
 	}
 
-	/* optionally nudge icon scale so they don't feel tiny on the big canvas */
+	/* lightly upsize the social buttons so they don’t feel tiny on the big canvas */
 	#header nav li {
 		width: clamp(3.7em, 6vw, 5.2em);
 		height: clamp(3.7em, 6vw, 5.2em);
