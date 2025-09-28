@@ -780,3 +780,48 @@ a:hover {
 		font-size: clamp(1.25em, 2.2vw, 1.8em);
 	}
 }
+
+/* 1) Smooth, noticeable hover on desktop/laptop (cursor devices) */
+@media (hover: hover) and (pointer: fine) {
+	#header nav a:before {
+		transition: transform 120ms ease, background-color 120ms ease,
+			border-color 120ms ease, box-shadow 120ms ease;
+	}
+
+	#header nav a:hover:before {
+		transform: translateY(-2px) scale(1.03);
+		box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
+		background-color: rgba(94, 194, 232, 0.18);
+		border-color: var(--accent);
+	}
+}
+
+/* 2) Strong tap feedback on phones/tablets (no-hover devices) */
+@media (hover: none) and (pointer: coarse) {
+
+	/* use an accent tap highlight instead of fully disabling it */
+	a {
+		-webkit-tap-highlight-color: rgba(94, 194, 232, 0.35);
+	}
+
+	#header nav a:before {
+		transition: transform 90ms ease, background-color 90ms ease,
+			border-color 90ms ease, box-shadow 90ms ease;
+	}
+
+	/* tap/press */
+	#header nav a:active:before {
+		transform: scale(1.04);
+		background-color: rgba(94, 194, 232, 0.28);
+		border-color: var(--accent);
+		box-shadow: 0 4px 14px rgba(0, 0, 0, .22);
+	}
+
+	/* keyboard focus (external keyboards on iPad) */
+	#header nav a:focus-visible:before {
+		transform: scale(1.04);
+		background-color: rgba(94, 194, 232, 0.24);
+		border-color: var(--accent);
+		box-shadow: 0 0 0 3px rgba(94, 194, 232, .45);
+	}
+}
