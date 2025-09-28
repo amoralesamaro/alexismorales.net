@@ -751,3 +751,32 @@ a:hover {
 		font-size: clamp(1.28em, 3.8vw, 1.82em);
 	}
 }
+
+/* Large tablets (e.g., iPad Pro 12.9" in landscape: 1366px) */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+
+	/* start hero a bit lower, similar to tablets */
+	#main {
+		justify-content: flex-start;
+		padding-top: clamp(64px, 11vh, 140px);
+	}
+
+	/* give the icons a touch more breathing room under the button */
+	#header nav {
+		margin-top: 1.5em;
+	}
+
+	/* optionally nudge icon scale so they don't feel tiny on the big canvas */
+	#header nav li {
+		width: clamp(3.7em, 6vw, 5.2em);
+		height: clamp(3.7em, 6vw, 5.2em);
+		line-height: clamp(3.9em, 6.3vw, 5.7em);
+	}
+
+	#header nav a:before {
+		width: clamp(2.4em, 4.2vw, 2.9em);
+		height: clamp(2.4em, 4.2vw, 2.9em);
+		line-height: clamp(2.4em, 4.2vw, 2.9em);
+		font-size: clamp(1.25em, 2.2vw, 1.8em);
+	}
+}
